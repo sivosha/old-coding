@@ -42,8 +42,13 @@ decodeMorse = function(morseCode){
 ```
 
 ## Career
-* Junior Game Tester at Ubisoft,Kyiv 2018 (7 month)
-* Plugins developer for Wordpress at Neoteric (3 month)
+| Ubisoft Kyiv | Period of work (01/2018 - 07/2018) |
+|:---------:|:----------------------------------:|
+| Junior Game Tester | Testing FarCry5 Game |
+
+| Software Developer | Period of work (06/2012 - 09/2012) |
+|:---------:|:----------------------------------:|
+| Intern | Wordpress plugins developer |
 
 ## Courses
 * RS.School JS/FrontEnd
