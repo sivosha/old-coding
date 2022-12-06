@@ -42,12 +42,13 @@ decodeMorse = function(morseCode){
 ```
 
 ## Career
+
 | Ubisoft Kyiv | Period of work (01/2018 - 07/2018) |
-|:---------:|:----------------------------------:|
-| Junior Game Tester | Testing FarCry5 Game |
+|:------------------:|:----------------------------------:|
+| Game Tester | Testing FarCry5 |
 
 | Software Developer | Period of work (06/2012 - 09/2012) |
-|:---------:|:----------------------------------:|
+|:------------------:|:----------------------------------:|
 | Intern | Wordpress plugins developer |
 
 ## Courses
