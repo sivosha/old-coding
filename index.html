@@ -2,7 +2,7 @@
 <html lang="en">
   <head class = "header">
     <meta charset="utf-8">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="style.css">
     <title>cv</title>
     <link rel="icon" href="favicon-16x16.png">
@@ -27,7 +27,8 @@
             </li>
             <li>
               <i class="fa-regular fa-envelope"></i>
-              &nbsp;o.m.vozniuk@gmail.com
+              &nbsp;
+              <a href="mailto:o.m.vozniuk@gmail.com">o.m.vozniuk@gmail.com </a>
             </li>
             <li class="numbers">
               <i class="fa-solid fa-mobile-screen-button"></i>
@@ -45,8 +46,8 @@
           <hr>
         </div>
         <div class="skills">
+          <h2><i class="fa-sharp fa-solid fa-lines-leaning"></i>&nbsp;Skills</h2>
           <ul>
-            <h2><i class="fa-sharp fa-solid fa-lines-leaning"></i>&nbsp;Skills</h2>
             <li>
               <b>Testing tools:</b>
               <span class="skill-point">Selenium IDE</span>
@@ -56,12 +57,13 @@
               <span class="skill-point">Bendicam</span>
               <span class="skill-point">FireBug</span>
             </li>
+            <li>
               <b>OS:</b>
-            <span class="skill-point">Windows</span>
-            <span class="skill-point">Linux Ubuntu</span>
+              <span class="skill-point">Windows</span>
+              <span class="skill-point">Linux Ubuntu</span>
             </li>
             <li>
-              <b>Programming language</b>
+              <b>Programming language:</b>
               <span class="skill-point">Java</span>
               <span class="skill-point">Python</span>
               <span class="skill-point">C++ (basics)</span>
@@ -76,7 +78,6 @@
               <span class="skill-point">Elementor</span>
               <span class="skill-point">WordPress</span>
               <span class="skill-point">Joomla</span>
-
             </li>
             <li>
               <b>Development tools:</b>
@@ -93,8 +94,8 @@
           </ul>
         </div>
         <div class="language">
+          <h2><i class="fa-solid fa-earth-europe"></i>&nbsp;Language</h2>
           <ul>
-            <h2><i class="fa-solid fa-earth-europe"></i>&nbsp;Language</h2>
             <li>
               <p>English</p>
               <progress max="100" value="70"></progress>
@@ -166,19 +167,19 @@
             <div class="code" id="code">
               <h2 class="pos"><i class="fa-sharp fa-solid fa-code"></i>&nbsp;Code Example</h2>
               <p class="code-scroll">
-                &#47;&#47;decode the Morse code <br/>
-                &nbsp;decodeMorse &#61; function	&#40;morseCode&#41;&#123; <br/>
-                &nbsp;var realWords &#61; &#91;&#93;&#59; <br/>
-                &nbsp;const words &#61; morseCode.trim	&#40;&#41;.split&#40;&#39;   &#39;&#41;&#59;<br/>
-                &nbsp;for 	&#40;const word of words&#41; &#123; <br/>
-                &nbsp;&nbsp;const symbols &#61; word.split	&#40;&#39; &#39;)&#59;<br/>
-                &nbsp;&nbsp;var realWord &#61; &#39;&#39;&#59;<br/>
-                &nbsp;&nbsp;&nbsp;for 	&#40;const symbol of symbols&#41;<br/>
-                &nbsp;&nbsp;&nbsp;realWord &#43;&#61; MORSE_CODE&#91;symbol&#93; <br/>
-                &nbsp;&nbsp;&nbsp;realWords.push	&#40;realWord&#41;<br/>
-                &nbsp;&#125;<br/>
-                return realWords.join	&#40;&#39; &#39;)&#59;<br/>
-                &#125;<br/>
+                &#47;&#47;decode the Morse code <br>
+                &nbsp;decodeMorse &#61; function	&#40;morseCode&#41;&#123; <br>
+                &nbsp;var realWords &#61; &#91;&#93;&#59; <br>
+                &nbsp;const words &#61; morseCode.trim	&#40;&#41;.split&#40;&#39;   &#39;&#41;&#59;<br>
+                &nbsp;for 	&#40;const word of words&#41; &#123; <br>
+                &nbsp;&nbsp;const symbols &#61; word.split	&#40;&#39; &#39;)&#59;<br>
+                &nbsp;&nbsp;var realWord &#61; &#39;&#39;&#59;<br>
+                &nbsp;&nbsp;&nbsp;for 	&#40;const symbol of symbols&#41;<br>
+                &nbsp;&nbsp;&nbsp;realWord &#43;&#61; MORSE_CODE&#91;symbol&#93; <br>
+                &nbsp;&nbsp;&nbsp;realWords.push	&#40;realWord&#41;<br>
+                &nbsp;&#125;<br>
+                return realWords.join	&#40;&#39; &#39;)&#59;<br>
+                &#125;<br>
               </p>
             </div>
             <div class="courses" id="courses">
@@ -213,7 +214,6 @@
         </div>
       </section>
     </main>
-  </body>
   <footer>
     <div class="container">
       <div class="follow">
@@ -242,4 +242,5 @@
       </div>
     </div>
   </footer>
+  </body>
 </html>
