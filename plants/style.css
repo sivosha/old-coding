@@ -1,7 +1,9 @@
 
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
-
+html{
+    scroll-behavior: smooth;
+}
 body{
     width: 100%;
     display: flex;
@@ -9,6 +11,19 @@ body{
     flex-direction: column;
     font-family: 'Roboto', sans-serif;
     color: #636060;
+}
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.welcome, .service, .contacts{
+    width: 100%;
+    background: #EDF2EC;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 text{
    font-weight: 100;
@@ -24,7 +39,8 @@ h1{
     font-weight: 700;
 }
 button{
-    pudding: 3rem 2.5rem;
+    width: 40%;
+    padding: 0.5rem 1.5rem;
     border-radius: .5rem;
     border-color: #E06733;
     color: #000000;
@@ -33,21 +49,7 @@ li{
     list-style: none;
 }
 
-/*main{
-    flex: 1;
-}*/
-
-/*.container{
-    max-width: 1440px;
-    margin-left: 50%;
-    margin-right: 50%;
-    height: 10em;
-    display: flex;
-    align-items: center;
-    justify-content: center
-    flex-direction: column;
-  } */
-.welcome{
+.welcome_lightgreen{
     width: 100%;
     padding-top: 30px;
     display: flex;
@@ -92,17 +94,29 @@ a, .main_nav a:link, a:visited, a:active{
     }
 .main_nav a:hover{
     text-decoration: none;
-    color: darkgrey;
+    color: #111;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.main_nav a{
+
+    text-shadow: 0px 3px 10px black;
 }
 .plants a:link, a:visited, a:hover, a:active{
     text-decoration: none;
     color: #010201;
 }
 .plants{
+    font-weight: 700;
     display: flex;
-    justify-content: flex-start;
+    justify-self: flex-start;
 }
-.container1, .service_nav{
+.main_nav{
+    display: flex;
+    justify-self: flex-end;
+}
+.service_nav{
     width: 100%;
     max-width: 1440px;
     padding: 20px;
@@ -111,16 +125,24 @@ a, .main_nav a:link, a:visited, a:active{
 .container{
     width: 100%;
     max-width: 1440px;
-    padding: 20px;
-	margin: 0 auto;
 }
-.main_header .container, .service_nav{
+
+.container, .service_nav{
     display: flex;
 	align-items: center;
 	justify-content: space-between;
 	flex-wrap: wrap;
 	padding: 0 1rem;
 }
+.main_header{
+    display: flex;
+	align-items: center;
+	flex-direction: column;
+	flex-wrap: wrap;
+	padding: 0 1rem;
+	width: 100%;
+}
+
 .main_header ul {
 	margin: 1em 0 .5em;
 	text-align: center;
@@ -135,38 +157,6 @@ a, .main_nav a:link, a:visited, a:active{
 	display: inline-block;
 	padding: .5em 1.5em;
 }
-/*nav{
-    height: 30px;
-    display: flex;
-    gap: 300px;
-    padding: 20px 0px 0 0px;
-    max-width: 1440px;
-    width: 100%;
-}
-.plants{
-    flex-grow: 1;
-    flex-basis: 100%;
-    font-weight: 700;
-    display: flex;
-
-}
-.nav_menu{
-    flex-grow: 1;
-    flex-basis: 100%;
-    background: grey;
-    justify-content: flex-end;
-}
-.nav_menu ul{
-    list-style: none;
-    display: flex;
-    align-items: center;
-    filter: drop-shadow(0 1mm 2mm black);
-    cursor: pointer;
-    column-gap: 20px;
-
-}*/
-
-
 footer{
     max-width:1440px;
     display: flex;
@@ -175,6 +165,7 @@ footer{
     bottom: 20px;
     align-items: center;
     margin-top: 20px;
+    padding-bottom: 50px;
 }
 .footer{
     display: flex;
@@ -202,14 +193,14 @@ footer{
 }
 
 
-.welcome, .about, .service, .prices, .contacts{
+.welcome_lightgreen, .about, .service_lightgreen, .prices, .contacts_lightgreen{
     max-width: 1440px;
     width: 100%;
     padding-top: 30px;
     display: flex;
     align-items: center;
 }
-.welcome, .service, .contacts{
+.welcome_lightgreen, .service_lightgreen, .contacts_lightgreen{
     background: #EDF2EC;
 }
 .welcome_container, .about_container, .service_container, .prices_container, .contact_container {
@@ -217,7 +208,8 @@ footer{
     display: flex;
     margin: 0 auto;
     justify-content: center;
-    }
+}
+
 .contact_container{
     lex-wrap: wrap;
     justify-content: space-between;
@@ -236,7 +228,7 @@ footer{
     position: relative;
     width: 30%;
     height: 10%;
-    padding: 0 5px;
+    padding: 5px 10px;
     margin-top: 5%;
 }
 
@@ -250,22 +242,26 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
     flex-wrap: wrap;
     padding: 20px;
     margin: 20px;
     width: 35%;
 }
 .about_right{
+    margin-left: 100px;
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    justify-self: flex-end;
+    align-self: flex-end;
 }
 .service_nav h2{
     width: 170px;
     flex-wrap: wrap;
     position: relative;
     margin-right: 11%;
+    font-weight: 400;
+}
+.about_left h2{
+    font-weight: 400;
 }
 
 .services a:link, .services a:visited, .services a:active, .services a:hover{
@@ -273,13 +269,14 @@ footer{
     color: #E06733;
 }
 
-.services ul {
-	margin: 1em 0 .5em;
+.services {
+	margin: 1em 0 .5em 4rem;
 	text-align: center;
 	display: flex;
 	align-items: center;
 }
-.services li {
+.services button{
+    width: 150px;
 	display: inline;
 	border-radius: .3rem;
 	border-style: solid;
@@ -306,7 +303,7 @@ footer{
     padding-bottom: 30px;
     margin-bottom: 50px;
 }
-#our_service{
+.our_service{
     max-width: 100%;
     height: auto;
 }
@@ -319,7 +316,9 @@ footer{
 .right_price h2{
     width: 250px;
     text-align: right;
+    font-color: #000000;
 }
+
 .contact_us{
     display: flex;
     justify-content: center;
