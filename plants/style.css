@@ -20,7 +20,13 @@ main{
     flex-direction: column;
     width: 100%;
 }
-
+text{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #717171;
+}
 h1{
     font-family: 'Inter';
     font-style: normal;
@@ -72,11 +78,6 @@ a.nav_line_orange:hover{
     text-decoration: none;
     transform: scale(1.2);
     cursor: pointer;
-}
-.nav_line button{
-    font-family: Inika;
-    font-size:20px;
-    color: #E06733;
 }
 
 .main_nav a, .plants{
@@ -283,8 +284,8 @@ button:hover{
 
 .service_nav {
     justify-content: flex-start;
-    font-family: Inika;
 }
+
 .serv{
     display: flex;
     flex-direction: column;
@@ -299,22 +300,17 @@ button:hover{
     color: #717171;
     text-align: center;
     font-family: 'Inter';
-    line-height: 20px;
-}
-.serv h3{
     font-weight: 700;
     font-size: 20px;
-}
-.serv span{
-    font-weight: 400;
-    font-size: 16px;
+    line-height: 20px;
 }
 .our_service{
     max-width: 100%;
     height: auto;
 }
 .contact_us{
-    align-items: center;
+    display: flex;
+    justify-content: center;
     font-family: Inika;
     font-size: 20px;
     color: #E06733;
