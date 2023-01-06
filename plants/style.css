@@ -35,8 +35,11 @@ button{
     width: 40%;
     padding: 0.5rem 1.5rem;
     border-radius: .5rem;
-    border-color: #E06733;
+}
+.welcome_right button{
     color: #000000;
+    background: #EDF2EC;
+    border: 1px solid #E06733;
 }
 li{
     list-style: none;
@@ -53,21 +56,34 @@ h2{
     color:  #499A18;
 }
 
-a, .main_nav a:link, a:visited, a:active{
+a.nav_line:link, a.nav_line:visited, a.nav_line:active, .plants {
     text-decoration: none;
     color: #010201;
 }
-.main_nav a:hover{
+a.contact_us, a.footer_a{
+    text-decoration: none;
+}
+a.nav_line_orange, a.nav_line_orange:hover , a.nav_line_orange:visited, a.nav_line_orange:active{
+    text-decoration: none;
+    color: #E06733;
+}
+
+a.nav_line:hover{
     text-decoration: none;
     color: #111;
     transform: scale(1.2);
     cursor: pointer;
 }
+a.nav_line_orange:hover{
+    text-decoration: none;
+    transform: scale(1.2);
+    cursor: pointer;
+}
 
-.main_nav a{
+.main_nav a, .plants{
     text-shadow: 0px 3px 10px black;
 }
-.plants a:link, a:visited, a:hover, a:active{
+.plants a:link, .plants a:visited, .plants a:hover, .plants a:active{
     text-decoration: none;
     color: #010201;
 }
@@ -129,6 +145,9 @@ a, .main_nav a:link, a:visited, a:active{
 	max-width: 1440px;
 	width: 100%;
 }
+.nav_line_orange{
+    font-color: #E06733;
+}
 
 .main_nav ul{
 	margin: 1em 0 .5em;
@@ -144,45 +163,7 @@ a, .main_nav a:link, a:visited, a:active{
 	display: inline-block;
 	padding: .5em 1.5em;
 }
-footer{
-    max-width:1440px;
-    display: flex;
-    flex-direction: column;
-    position: absolut;
-    bottom: 20px;
-    align-items: center;
-    margin-top: 20px;
-    padding-bottom: 50px;
-}
-.footer{
-    display: flex;
-    gap: 120px;
-    padding: 0px 50px;
-    max-width: 1440px;
-    width: 100%;
-    align-items: space-between;
-
-}
-.copyright{
-    flex-grow: 1;
-    flex-basis: 100%;
-    text-align: center;
-}
-.rolling{
-    flex-grow: 1;
-    flex-basis: 100%;
-    text-align: center;
-}
-.social{
-    flex-grow: 1;
-    flex-basis: 100%;
-    text-align: center;
-}
-
-
-
 .contact_container{
-    lex-wrap: wrap;
     justify-content: space-between;
     position: relative;
 }
@@ -214,9 +195,10 @@ footer{
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 20px;
-    margin: 20px;
-    width: 35%;
+    width: 50%;
+}
+.welcome_left{
+    width: 50%;
 }
 .about_right{
     margin-left: 100px;
@@ -256,6 +238,10 @@ footer{
     padding: 5px 10px;
     margin: 0 10px;
 }
+button:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
 
 .service_nav {
     justify-content: flex-start;
@@ -294,12 +280,12 @@ footer{
 .contact_us{
     display: flex;
     justify-content: center;
-    width: 30%;
-    border-radius: .2rem;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #E06733;
     color: #E06733;
+}
+.right_price button{
+    color: #E06733;
+    border: 1px solid #E06733;
+    background: white;
 }
 .right_price{
     display: flex;
@@ -341,6 +327,43 @@ footer{
 .leafs{
     width: 35%;
 }
+footer{
+    width: 100%;
+    max-width:1440px;
+    display: flex;
+    flex-direction: column;
+    position: absolut;
+    align-items: center;
+    margin-top: 20px;
+    color: #000000;
+}
+.footer{
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+.copyright{
+    flex-grow: 1;
+    text-align: start;
+}
+.rolling{
+    flex-grow: 1;
+    text-align: center;
+}
+.social{
+    flex-grow: 1;
+    text-align: end;
+}
+.social ul{
+    display: flex;
+	justify-content: space-around;
+}
+.footer a, footer a:visited, footer a:hover, footer .plants a:active{
+    text-decoration: none;
+    color: #000000;
+}
+
+
 @media only screen and (max-width: 768px){
     .footer{
         flex-direction: column;
