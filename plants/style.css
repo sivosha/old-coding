@@ -1,6 +1,8 @@
 
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inika:wght@100;300;400;700&display=swap');
 html{
     scroll-behavior: smooth;
 }
@@ -19,41 +21,39 @@ main{
     width: 100%;
 }
 text{
-   font-weight: 100;
-   padding: 0 10px;
-   font-size: 0.875em;
-}
-p{
-    font-weight: 300;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #717171;
 }
 h1{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Inter';
+    font-style: normal;
     font-weight: 700;
-}
-button{
-    width: 40%;
-    padding: 0.5rem 1.5rem;
-    border-radius: .5rem;
+    color: #717171;
+    font-size: 45px;
+    line-height: 50px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .welcome_right button{
+    width: 158px;
+    height: 44px;
     color: #000000;
-    background: #EDF2EC;
+    text-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
     border: 1px solid #E06733;
+    border-radius: 5px;
+    background-color: transparent;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 li{
     list-style: none;
 }
-
 .green{
-    color:    #499A18;
+    color: #499A18;
 }
 .orange{
     color: #E06733;
-}
-h2{
-    font-weight: 300;
-    color:  #499A18;
 }
 
 a.nav_line:link, a.nav_line:visited, a.nav_line:active, .plants {
@@ -81,7 +81,9 @@ a.nav_line_orange:hover{
 }
 
 .main_nav a, .plants{
-    text-shadow: 0px 3px 10px black;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.45);
+    font-width: 400;
+    font-size: 16px;
 }
 .plants a:link, .plants a:visited, .plants a:hover, .plants a:active{
     text-decoration: none;
@@ -92,6 +94,7 @@ a.nav_line_orange:hover{
     display: flex;
     justify-self: flex-start;
 }
+
 .main_nav{
     display: flex;
     justify-self: flex-end;
@@ -99,11 +102,9 @@ a.nav_line_orange:hover{
 .service_nav{
     width: 100%;
     max-width: 1440px;
-    padding: 20px;
-	margin: 0 auto;
 }
 .container{
-    width: 70%;
+    width: 1222px;
 }
 
 .lightgreen{
@@ -119,12 +120,18 @@ a.nav_line_orange:hover{
     max-width: 1440px;
     width: 100%;
     padding-top: 30px;
+    padding-bottom: 70px;
     display: flex;
     align-items: center;
 }
-
+.contacts{
+    padding-bottom: 20px;
+}
+.woman{
+    width: 400px;
+}
 .welcome_container, .about_container, .service_container, .prices_container, .contact_container{
-    width: 70%;
+    width: 1222px;
     display: flex;
     margin: 0 auto;
     justify-content: center;
@@ -144,8 +151,11 @@ a.nav_line_orange:hover{
 	padding: 0 1rem;
 	max-width: 1440px;
 	width: 100%;
+    font-family: 'Inika';
+    font-weight: 400;
 }
 .nav_line_orange{
+    font-weight: 700;
     font-color: #E06733;
 }
 
@@ -168,20 +178,26 @@ a.nav_line_orange:hover{
     position: relative;
 }
 .contact_container h2{
-    font-weight: bold;
+    font-weight: 700;
+    font-family: Inika;
+    font-size: 40px;
+    color: #499A18;
 }
 
 .city{
     background: #D6E7D2;
-    filter: drop-shadow(0 1mm 1mm #717171);
-    width: 40%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    height: 50px;
+    width: 35%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     position: relative;
-    width: 30%;
-    height: 10%;
     padding: 5px 10px;
-    margin-top: 5%;
+    margin-top: 10%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 20px;
 }
 
 .service_container {
@@ -195,10 +211,24 @@ a.nav_line_orange:hover{
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
-    width: 50%;
+    font-family: 'Inter';
+    font-size: 20px;
+    color: #636060;
+}
+.welcome_right{
+    width: 45%;
+    line-height: 35px;
 }
 .welcome_left{
-    width: 50%;
+    width: 55%;
+}
+.welcome_left img {
+    width: 448.8px;
+    height: auto;
+}
+.about_left{
+    width: 55%;
+    line-height: 30px;
 }
 .about_right{
     margin-left: 100px;
@@ -206,37 +236,46 @@ a.nav_line_orange:hover{
     justify-self: flex-end;
     align-self: flex-end;
 }
-.service_nav h2{
-    width: 170px;
+.service h2{
+    width: 306px;
     flex-wrap: wrap;
     position: relative;
-    margin-right: 11%;
+    margin-right: 4.2%;
+    font-family: 'Inika';
     font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
 }
 .about_left h2{
+    font-family: 'Inika';
     font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
 }
 
 .services a:link, .services a:visited, .services a:active, .services a:hover{
     text-decoration: none;
     color: #E06733;
+    font-family: 'Inika';
+    font-size: 20px;
+    line-height: 26px;
 }
 
-.services {
+.services{
+    width: 50%;
 	margin: 1em 0 .5em 4rem;
 	text-align: center;
 	display: flex;
 	align-items: center;
+	justify-content: space-around;
 }
 .services button{
-    width: 150px;
-	display: inline;
-	border-radius: .3rem;
-	border-style: solid;
-    border-width: 1px;
-    border-color: #E06733;
-    padding: 5px 10px;
-    margin: 0 10px;
+    width: 161px;
+    height: 50px;
+    border: 1px solid #E06733;
+    border-radius: 5px;
+    background-color: transparent;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 button:hover{
     transform: scale(1.2);
@@ -249,43 +288,37 @@ button:hover{
 
 .serv{
     display: flex;
-    width: 27%;
     flex-direction: column;
     justify-content: space-between;
+    border: 1px solid #E3E1D5;
     border-radius: 1.5rem;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #E3E1D5;
-    color: #717171;
-    text-align: center;
+
+    width: 27%;
     padding-bottom: 30px;
     margin-bottom: 50px;
+
+    color: #717171;
+    text-align: center;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
 }
 .our_service{
     max-width: 100%;
     height: auto;
 }
-
-.left_price h2, .right_price h2{
-    color: #000000;
-    font-weight: bold;
-
-}
-.right_price h2{
-    width: 250px;
-    text-align: right;
-    font-color: #000000;
-}
-
 .contact_us{
     display: flex;
     justify-content: center;
+    font-family: Inika;
+    font-size: 20px;
     color: #E06733;
 }
 .right_price button{
     color: #E06733;
     border: 1px solid #E06733;
-    background: white;
+    background: transparent;
 }
 .right_price{
     display: flex;
@@ -293,39 +326,104 @@ button:hover{
     flex-direction: column;
     position: relative;
 }
-
-.price_border{
-    display: flex;
-    width: 90%;
-    flex-direction: column;
-    justify-content: center;
-    position: left;
-    border-radius: 0.9rem;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #D9D9D9;
-    padding: 10px 20px;
-}
 .dropdown{
+    width: 200px;
     display: flex;
     justify-content: space-between;
-    border-radius: 0.9rem;
+    align-items: center;
+    border-radius: 20px;
     border-style: solid;
     border-width: 1px;
     border-color: #D9D9D9;
-    padding: 5px 20px;
-    margin: 10px;
+    padding: 10px 30px;
+    margin: 15px;
     color: #000000;
     background: #EDF2EC;
+}
+.drop_down{
+    width: 16px;
+    height: 16px;
 }
 
 .prices_container{
     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.price_header{
+    width: 100%;
+    display: flex;
+}
+.price_body{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding: 0 1rem;
+	max-width: 1440px;
+	width: 100%;
+    font-family: 'Inika';
+    font-weight: 400;
     justify-content: space-between;
-    padding-bottom: 5%;
+}
+.left_column{
+    font-weight: 700;
+    font-size: 20px;
+    font-family: Inter;
+    color: #000000;
+    width: 323px;
+    display: flex;
+    justify-self: flex-start;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #D9D9D9;
+    padding: 20px 10px;
+}
+.right_column{
+    display: flex;
+    justify-self: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+}
+.right_column button{
+    width: 162px;
+    height: 50px;
+    color: #E06733;
+    border-radius: 5px;
+    border: 1px solid #E06733;
+    background: transparent;
+}
+.price_header h2{
+    width: 100%;
+    display: flex;
+    font-size: 40px;
+    font-family: Inter;
+    color: #000000;
+    justify-content: space-between;
+}
+.left{
+width: 50%;
+    display: flex;
+    justify-self: flex-start;
+}
+.right{
+    width: 40%;
+    justify-self: flex-end;
+    align-items: flex-end;
+    text-align: right;
+}
+.column{
+    width: 250px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
 }
 .leafs{
-    width: 35%;
+    width: 152px;
 }
 footer{
     width: 100%;
@@ -338,7 +436,7 @@ footer{
     color: #000000;
 }
 .footer{
-    width: 70%;
+    width: 1222px;
     display: flex;
     align-items: center;
 }
