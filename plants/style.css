@@ -138,7 +138,6 @@ a.nav_line_orange:hover{
 }
 .contacts{
     padding-top: 54px;
-    padding-bottom: 18px;
 }
 .woman{
     width: 400px;
@@ -488,7 +487,7 @@ footer{
 	font-family: 'Inter';
 	font-size: 20px;
 	line-height: 50px;
-	padding-top: 20px;
+	padding-top: 38px;
 }
 .footer{
     width: 1242px;
