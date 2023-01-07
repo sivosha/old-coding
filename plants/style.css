@@ -35,9 +35,11 @@ h1{
     color: #000000;
     text-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
     border: 1px solid #E06733;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: transparent;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	font-family: 'Inika';
+	font-size: 16px;
 }
 li{
     list-style: none;
@@ -58,6 +60,7 @@ a.contact_us, a.footer_a{
 }
 a.nav_line_orange, a.nav_line_orange:hover , a.nav_line_orange:visited, a.nav_line_orange:active{
     text-decoration: none;
+	font-weight: 700;
     color: #E06733;
 }
 
@@ -75,7 +78,6 @@ a.nav_line_orange:hover{
 
 .main_nav a, .plants{
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.45);
-    font-width: 400;
     font-size: 16px;
 }
 .plants a:link, .plants a:visited, .plants a:hover, .plants a:active{
@@ -83,7 +85,6 @@ a.nav_line_orange:hover{
     color: #010201;
 }
 .plants{
-    font-weight: 700;
     display: flex;
     justify-self: flex-start;
 }
@@ -95,9 +96,13 @@ a.nav_line_orange:hover{
 .service_nav{
     width: 100%;
     max-width: 1440px;
+	margin-left: -19px;
+	margin-bottom: 47px;;
 }
 .container{
-    width: 1222px;
+	margin-top: 30px;
+	margin-bottom: 55px;
+    width: 1270px;
 }
 
 .lightgreen{
@@ -112,13 +117,28 @@ a.nav_line_orange:hover{
 .welcome, .about, .service, .prices, .contacts{
     max-width: 1440px;
     width: 100%;
-    padding-top: 30px;
-    padding-bottom: 70px;
     display: flex;
     align-items: center;
 }
+.welcome{
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+.about{
+    padding-top: 86px;
+    padding-bottom: 95px;
+}
+.service{
+    padding-top: 20px;
+    padding-bottom: 70px;
+}
+.prices{
+    margin-top: -7px;
+    padding-bottom: 125px;
+}
 .contacts{
-    padding-bottom: 20px;
+    padding-top: 54px;
+    padding-bottom: 18px;
 }
 .woman{
     width: 400px;
@@ -141,15 +161,10 @@ a.nav_line_orange:hover{
 	align-items: center;
 	flex-direction: column;
 	flex-wrap: wrap;
-	padding: 0 1rem;
 	max-width: 1440px;
 	width: 100%;
     font-family: 'Inika';
     font-weight: 400;
-}
-.nav_line_orange{
-    font-weight: 700;
-    font-color: #E06733;
 }
 
 .main_nav ul{
@@ -175,22 +190,27 @@ a.nav_line_orange:hover{
     font-family: Inika;
     font-size: 40px;
     color: #499A18;
+
+	margin-top: 10px;
+	margin-left: 70px;
 }
 
 .city{
     background: #D6E7D2;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     height: 50px;
-    width: 35%;
+    width: 410px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
-    padding: 5px 10px;
-    margin-top: 10%;
     font-family: 'Inter';
     font-style: normal;
     font-size: 20px;
+
+    padding: 0px 20px;
+	margin-top: 100px;
+	margin-left: 30px;
 }
 
 .service_container {
@@ -209,19 +229,29 @@ a.nav_line_orange:hover{
     color: #636060;
 }
 .welcome_right{
-    width: 45%;
+    width: 550px;
     line-height: 35px;
+}
+.welcome_right p{
+	width: 525px;
+	margin-top: 5px;
+	margin-bottom: 45px;
 }
 .welcome_left{
     width: 55%;
 }
-.welcome_left img {
+.welcome_left img{
     width: 448.8px;
     height: auto;
+	margin-top: 35px;
 }
 .about_left{
     width: 55%;
     line-height: 30px;
+}
+.about_left p{
+	width: 605px;
+	margin-top: 4px;
 }
 .about_right{
     margin-left: 100px;
@@ -256,7 +286,7 @@ a.nav_line_orange:hover{
 
 .services{
     width: 50%;
-	margin: 1em 0 .5em 4rem;
+	margin: 4px 10px 0 72px;
 	text-align: center;
 	display: flex;
 	align-items: center;
@@ -289,7 +319,7 @@ button:hover{
     border: 1px solid #E3E1D5;
     border-radius: 1.5rem;
 
-    width: 27%;
+    width: 329px;
     padding-bottom: 30px;
     margin-bottom: 50px;
 
@@ -297,15 +327,20 @@ button:hover{
     text-align: center;
     font-family: 'Inter';
     line-height: 20px;
+
+	margin-bottom: 53px;
 }
 .serv h3{
     font-weight: 700;
     font-size: 20px;
     line-height: 20px;
+	margin-top: 10px;
 }
 .serv span{
     font-weight: 400;
     font-size: 16px;
+	margin-top: -5px;
+	padding-bottom: 4px;
 }
 .our_service{
     max-width: 100%;
@@ -329,18 +364,26 @@ button:hover{
     position: relative;
 }
 .dropdown{
-    width: 200px;
+    width: 180px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-radius: 20px;
+    border-radius: 15px;
     border-style: solid;
     border-width: 1px;
     border-color: #D9D9D9;
-    padding: 10px 30px;
-    margin: 15px;
     color: #000000;
     background: #EDF2EC;
+	
+	font-family: 'Inter';
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 20px;
+	text-indent: 4px;
+
+	padding: 13px 34px;
+    margin: 17px 0;
+
 }
 .drop_down{
     width: 16px;
@@ -360,7 +403,6 @@ button:hover{
     display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	padding: 0 1rem;
 	max-width: 1440px;
 	width: 100%;
     font-family: 'Inika';
@@ -372,7 +414,7 @@ button:hover{
     font-size: 20px;
     font-family: Inter;
     color: #000000;
-    width: 323px;
+    width: 330px;
     display: flex;
     justify-self: flex-start;
     flex-direction: column;
@@ -381,7 +423,9 @@ button:hover{
     border-style: solid;
     border-width: 1px;
     border-color: #D9D9D9;
-    padding: 20px 10px;
+    
+	padding: 17px 0;
+	margin-top: -23px;
 }
 .right_column{
     display: flex;
@@ -396,6 +440,8 @@ button:hover{
     border-radius: 5px;
     border: 1px solid #E06733;
     background: transparent;
+
+	margin-top: 7px;
 }
 .price_header h2{
     width: 100%;
@@ -406,7 +452,7 @@ button:hover{
     justify-content: space-between;
 }
 .left{
-width: 50%;
+	width: 50%;
     display: flex;
     justify-self: flex-start;
 }
@@ -425,44 +471,58 @@ width: 50%;
     position: relative;
 }
 .leafs{
-    width: 152px;
+    width: 124px;
+    height: 150px;
+	object-fit: cover;
+	object-position: 0 0;
+	transform: scale(1.2, 1.2);
+	align-self: flex-start;
+
+	padding-top: 50px;
+	padding-left: 13px;
 }
 footer{
-    width: 100%;
     max-width:1440px;
-    display: flex;
-    flex-direction: column;
     position: absolut;
-    align-items: center;
-    margin-top: 20px;
     color: #000000;
+	font-family: 'Inter';
+	font-size: 20px;
+	line-height: 50px;
+	padding-top: 20px;
 }
 .footer{
-    width: 1222px;
+    width: 1242px;
     display: flex;
     align-items: center;
+	justify-content: space-between;
 }
 .copyright{
-    flex-grow: 1;
+    flex-grow: 15;
     text-align: start;
 }
 .rolling{
-    flex-grow: 1;
+    flex-grow: 13;
     text-align: center;
 }
 .social{
-    flex-grow: 1;
-    text-align: end;
+    flex-grow: 17;
+	display: flex;
+	align-items: center;
+    justify-content: flex-end;
+	margin-right: 20px;
 }
 .social ul{
+	width: 50%;
+	align-self: end;
     display: flex;
+	flex-direction: row;
+	align-items: center;
 	justify-content: space-around;
 }
 .footer a, footer a:visited, footer a:hover, footer .plants a:active{
     text-decoration: none;
     color: #000000;
 }
-
 
 @media only screen and (max-width: 768px){
     .footer{
