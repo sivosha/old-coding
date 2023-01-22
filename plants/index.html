@@ -1,206 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="shortcut icon" href="image/logo_vector.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="shortcut icon"
+      href="image/logo_vector.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
     <script src="index.js"></script>
     <title>Plants</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="lightgreen">
-        <div class="main_header">
-            <div class="container">
-                <a href="#" class= "plants">
-                    <img src="image/logo_vector.png" alt="mini_logo">Plants
-                </a>
-                <nav class="main_nav">
-                    <ul>
-                        <li>
-                            <a href="#welcome" class="nav_line_orange">Home</a>
-                        </li>
-                        <li>
-                            <a href="#about" class="nav_line">About us</a>
-                        </li>
-                        <li>
-                            <a href="#service" class="nav_line">Service</a>
-                        </li>
-                        <li>
-                            <a href="#prices" class="nav_line">Price</a>
-                        </li>
-                        <li>
-                            <a href="#contacts" class="nav_line">Contacts</a>
-                        </li>
-                    </ul>
+      <div class="main_header">
+        <div class="container">
+          <a href="#" class="plants">
+            <img src="image/logo_vector.png" alt="mini_logo" />Plants
+          </a>
+          <div class="menu_dropdown">
+            <!--button onclick="myFunction()" class="humburg">
+              <img src="image/menu-line.svg" alt="" class="menu_icon" />
+            </button-->
+            <nav class="main_nav" id="myDropDown">
+              <ul class="nav_pos">
+                <li>
+                  <a href="#welcome" class="nav_line_orange">Home</a>
+                </li>
+                <li>
+                  <a href="#about" class="nav_line">About us</a>
+                </li>
+                <li>
+                  <a href="#service" class="nav_line">Service</a>
+                </li>
+                <li>
+                  <a href="#prices" class="nav_line">Price</a>
+                </li>
+                <li>
+                  <a href="#contacts" class="nav_line">Contacts</a>
+                </li>
+              </ul>
             </nav>
-            </div>
+			<button class="hamburger_new ">
+				<div class="bar">
+  
+				</div>
+			</button>
+            <div1 class="nav_close1">
+              <!--img src1="image/close-line.svg" alt="" class="close_nav" /-->
+            </div1>
+          </div>
         </div>
+      </div>
     </header>
     <main class="main">
-        <section id="welcome" class="lightgreen">
-            <div class="welcome">
-                <div class="welcome_container">
-                    <div class="welcome_left">
-                        <img src="image/leafs.png" alt="leafs">
-                    </div>
-                    <div class="welcome_right">
-                        <h1>We grow <span class="green">plants</span> and give you oxygen</h1>
-                        <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-                        </p>
-                        <button>LEARN MORE</button>
-                    </div>
-                </div>
+      <section id="welcome" class="lightgreen">
+        <div class="welcome">
+          <div class="welcome_container">
+            <div class="welcome_left">
+              <img src="image/leafs.png" alt="leafs" />
             </div>
-        </section>
-        <section id="about" class="about">
-            <div class="about_container">
-                    <div class="about_left">
-                        <h2 class="green">
-                            We are <span class="orange">professional <br/>experienced </span> gardeners
-                        </h2>
-                        <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                            It has survived not only five centuries,
-                            but also the leap into electronic typesetting, remaining essentially unchanged.
-                        </p>
-                    </div>
-                    <div class="about_right">
-                        <img src="image/houseplant.png" alt="houseplant">
-                    </div>
-                </div>
-        </section>
-        <section class="lightgreen" id="service">
-            <div class="service">
-                <div class="service_container">
-                    <div class="service_nav">
-                        <h2 class="green">Service and our projects</h2>
-                        <div class="services">
-                            <button onclick="window.open('https://rs.school/js/', '_blank');" class="nav_line orange" >
-                                Gardens
-                            </button>
-                            <button onclick="window.open('https://rs.school/js/', '_blank');" class="nav_line orange">
-                                Lawn
-                            </button>
-                            <button onclick="window.open('https://rs.school/js/', '_blank');" class="nav_line orange">
-                                Planting
-                            </button>
-                        </div>
-                    </div>
-                    <div class="serv">
-                        <img src="image/first.png" alt="our_service" class="our_service">
-                        <h3 class="orange">Garden care </h3>
-                        <span> Lorem Ipsum has been the industry</span>
-                    </div>
-                    <div class="serv">
-                        <img src="image/second.png" alt="our_service" class="our_service">
-                        <h3 class="orange">Planting </h3>
-                        <span> Lorem Ipsum has been the industry</span>
-                    </div>
-                    <div class="serv">
-                        <img src="image/third.png" alt="our_service" class="our_service">
-                        <h3 class="orange">Lawn care </h3>
-                        <span> Lorem Ipsum has been the industry</span>
-                    </div>
-                    <div class="serv">
-                        <img src="image/fourth.png" alt="our_service" class="our_service">
-                        <h3 class="orange">Planting </h3>
-                        <span> Lorem Ipsum has been the industry</span>
-                    </div>
-                    <div class="serv">
-                        <img src="image/fifth.png" alt="our_service" class="our_service">
-                        <h3 class="orange"> Garden care </h3>
-                        <span> Lorem Ipsum has been the industry</span>
-                    </div>
-                    <div class="serv">
-                        <img src="image/sixth.png" alt="our_service" class="our_service">
-                        <h3 class="orange">Planting </h3>
-                        <span> Lorem Ipsum has been the industry</span>
-                    </div>
-                </div>
+            <div class="welcome_right">
+              <h1>
+                We grow <span class="green">plants</span> and give you oxygen
+              </h1>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s.
+              </p>
+              <button>LEARN MORE</button>
             </div>
-        </section>
-        <section class="prices" id="prices">
-            <div class="prices_container">
-                <div class="price_header">
-                        <h2>
-                            <span class="left">Prices</span>
-                            <span class="right">Our best <span class="green">  gardeners </span> are ready to help you</span>
-                        </h2>
-                </div>
-                <div class="price_body">
-                    <div class="left_column">
-                        <span class="dropdown">
-                            Basics
-                            <img src="image/accordion_btn.png" alt="accordion_btn" class="drop_down">
-                        </span>
-                        <span class="dropdown">
-                            Standard
-                            <img src="image/accordion_btn.png" alt="accordion_btn" class="drop_down">
-                        </span>
-                        <span class="dropdown">
-                            Pro care
-                            <img src="image/accordion_btn.png" alt="accordion_btn" class="drop_down">
-                        </span>
-                    </div>
-                    <div class="right_column">
-                        <button onclick="window.open('https://rs.school/js/', '_blank');" class="contact_us">Contact us</button>
-                        <img src="image/leafs.png" alt="leafs" class="leafs">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="contacts" class="lightgreen">
-            <div class="contacts">
-                <div class="contact_container">
-                    <img src="image/contact_woman.png" alt="woman" class="woman">
-                    <h2>Contact us</h2>
-                    <span class="city">
-                        City
-                        <img src="image/accordion_btn.png" alt="accordion_btn" class="city_down">
-                    </span>
-                </div>
-            </div>
-        </section>
-    </main>
-	<footer>
-        <div class="footer">
-            <div class="copyright">
-                <img src="image/c.png" alt="©"> &nbsp;&nbsp;&nbsp;2022 &nbsp;
-                <a href="https://github.com/sivosha" class="footer_a">
-                    github
-                </a>
-            </div>
-            <div class="rolling">
-                <a href="https://rs.school/js/" class="footer_a">Rolling Scopes School</a>
-            </div>
-            <div class="social">
-                <ul>
-                    <li>
-                        <a href="https://rs.school/js/" class="footer_a">
-                            <img src="image/inst.svg" alt="instagram">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://rs.school/js/" class="footer_a">
-                            <img src="image/fb.svg" alt="facebook">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://rs.school/js/" class="footer_a">
-                            <img src="image/twit.svg" alt="twitter">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://rs.school/js/" class="footer_a">
-                            <img src="image/pint.svg" alt="pinterest">
-                        </a>
-                    </li>
-                </ul>
-            </div>
+          </div>
         </div>
+      </section>
+      <section id="about" class="about">
+        <div class="about_container">
+          <div class="about_left">
+            <h2 class="green">
+              We are
+              <span class="orange">professional <br />experienced </span>
+              gardeners
+            </h2>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged.
+            </p>
+          </div>
+          <div class="about_right">
+            <img src="image/houseplant.png" alt="houseplant" />
+          </div>
+        </div>
+      </section>
+      <section class="lightgreen" id="service">
+        <div class="service">
+          <div class="service_container">
+            <div class="service_nav">
+              <h2 class="green">Service and our projects</h2>
+              <div class="services">
+                <button
+                  onclick="window.open('https://rs.school/js/', '_blank');"
+                  class="nav_line orange"
+                >
+                  Gardens
+                </button>
+                <button
+                  onclick="window.open('https://rs.school/js/', '_blank');"
+                  class="nav_line orange"
+                >
+                  Lawn
+                </button>
+                <button
+                  onclick="window.open('https://rs.school/js/', '_blank');"
+                  class="nav_line orange"
+                >
+                  Planting
+                </button>
+              </div>
+            </div>
+            <div class="serv">
+              <img
+                src="image/first.png"
+                alt="our_service"
+                class="our_service"
+              />
+              <h3 class="orange">Garden care</h3>
+              <span> Lorem Ipsum has been the industry</span>
+            </div>
+            <div class="serv">
+              <img
+                src="image/second.png"
+                alt="our_service"
+                class="our_service"
+              />
+              <h3 class="orange">Planting</h3>
+              <span> Lorem Ipsum has been the industry</span>
+            </div>
+            <div class="serv">
+              <img
+                src="image/third.png"
+                alt="our_service"
+                class="our_service"
+              />
+              <h3 class="orange">Lawn care</h3>
+              <span> Lorem Ipsum has been the industry</span>
+            </div>
+            <div class="serv">
+              <img
+                src="image/fourth.png"
+                alt="our_service"
+                class="our_service"
+              />
+              <h3 class="orange">Planting</h3>
+              <span> Lorem Ipsum has been the industry</span>
+            </div>
+            <div class="serv">
+              <img
+                src="image/fifth.png"
+                alt="our_service"
+                class="our_service"
+              />
+              <h3 class="orange">Garden care</h3>
+              <span> Lorem Ipsum has been the industry</span>
+            </div>
+            <div class="serv">
+              <img
+                src="image/sixth.png"
+                alt="our_service"
+                class="our_service"
+              />
+              <h3 class="orange">Planting</h3>
+              <span> Lorem Ipsum has been the industry</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="prices" id="prices">
+        <div class="prices_container">
+          <div class="price_header">
+            <h2>
+              <span class="left">Prices</span>
+            </h2>
+          </div>
+          <div class="price_body">
+            <div class="left_column">
+              <span class="dropdown">
+                Basics
+                <img
+                  src="image/accordion_btn.png"
+                  alt="accordion_btn"
+                  class="drop_down"
+                />
+              </span>
+              <span class="dropdown">
+                Standard
+                <img
+                  src="image/accordion_btn.png"
+                  alt="accordion_btn"
+                  class="drop_down"
+                />
+              </span>
+              <span class="dropdown">
+                Pro care
+                <img
+                  src="image/accordion_btn.png"
+                  alt="accordion_btn"
+                  class="drop_down"
+                />
+              </span>
+            </div>
+            <div class="right_column">
+              <span class="right">
+                <h3>
+                  Our best <span class="green"> gardeners </span> are ready to
+                  help you
+                </h3>
+              </span>
+              <button
+                onclick="window.open('https://rs.school/js/', '_blank');"
+                class="contact_us"
+              >
+                Contact us
+              </button>
+              <img src="image/leafs.png" alt="leafs" class="leafs" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contacts" class="lightgreen">
+        <div class="contacts">
+          <div class="contact_container">
+            <img src="image/contact_woman.png" alt="woman" class="woman" />
+            <h2>Contact us</h2>
+            <span class="city">
+              City
+              <img
+                src="image/accordion_btn.png"
+                alt="accordion_btn"
+                class="city_down"
+              />
+            </span>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="copyright">
+          <img src="image/c.png" alt="©" /> &nbsp;&nbsp;&nbsp;2022 &nbsp;
+          <a href="https://github.com/sivosha" class="footer_a"> github </a>
+        </div>
+        <div class="rolling">
+          <a href="https://rs.school/js/" class="footer_a"
+            >Rolling Scopes School</a
+          >
+        </div>
+        <div class="social">
+          <ul>
+            <li>
+              <a href="https://rs.school/js/" class="footer_a">
+                <img src="image/inst.svg" alt="instagram" />
+              </a>
+            </li>
+            <li>
+              <a href="https://rs.school/js/" class="footer_a">
+                <img src="image/fb.svg" alt="facebook" />
+              </a>
+            </li>
+            <li>
+              <a href="https://rs.school/js/" class="footer_a">
+                <img src="image/twit.svg" alt="twitter" />
+              </a>
+            </li>
+            <li>
+              <a href="https://rs.school/js/" class="footer_a">
+                <img src="image/pint.svg" alt="pinterest" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
